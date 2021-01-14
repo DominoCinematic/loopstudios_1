@@ -1,0 +1,410 @@
+/* import CSS RESPONSIVE */
+/* @import "/responsive.css"; */
+
+/* global CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+}
+
+body {
+    font-size: 1.125rem;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --darkGray: hsl(0, 0%, 55%);
+    --veryDarkGray: hsl(0, 0%, 41%); 
+
+    /* font-family 400 font size */
+    --font-Alata: 'Alata', sans-serif;
+
+    /* 300 font size */
+    --font-Josefin_Sans: 'Josefin Sans', sans-serif;
+
+}
+
+
+
+/* heder CSS */
+
+header {
+    width: 100%;
+    height: 650px;
+    background: url(images/desktop/image-hero.jpg);
+    background-size: cover;
+
+}
+
+header .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header .container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.8125rem;
+}
+
+header .container nav .logo {
+
+}
+
+header .container nav .toggle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+header .container nav .toggle span {
+    width: 25px;
+    height: 2px;
+    background: var(--white);
+    display: block;
+    
+
+}
+
+header .container nav .toggle span.jeden {
+    position: absolute;
+    top: 17px;
+    left: 0;
+
+}
+
+header .container nav .toggle span.dwa {
+    position: absolute;
+    bottom: 21px;
+    left: 0;
+
+}
+
+header .container nav .toggle span.trzy {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+
+}
+
+header .container nav .main_nav {
+    
+}
+
+header .container nav .main_nav a {
+    font-family: var(--font-Alata);
+    text-decoration: none;
+    color: var(--white);
+    transition: 300ms;
+    position: relative;
+}
+
+header .container nav .main_nav a:not(:last-child) {
+    margin-right: 20px;
+}
+
+header .container nav .main_nav a:hover:after {
+    content: '';
+    width: 50%;
+    margin: 0 auto;
+    height: 3px;
+    background: var(--white);
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+} 
+
+header .container .header__text {
+    width: 100%;
+    max-width: 640px;
+    border: 2px solid var(--white);
+    padding: 37px 0 40px 40px;
+    margin-top: 130px;
+    margin-left: 162px;
+}
+
+header .container .header__text h1 {
+    font-family: var(--font-Josefin_Sans);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 65px;
+}
+
+
+/* section.VR CSS */
+
+section.VR {
+    margin-top: 160px;
+}
+
+section.VR .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    display: flex;
+    position: relative;
+}
+
+section.VR .container .vr__img {
+    width: 80%;
+}
+
+section.VR .container .vr__img img {
+    width: 100%;
+}
+
+section.VR .container .vr__text {
+    width: 40%;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+}
+
+section.VR .container .vr__text h2 {
+    font-family: var(--font-Josefin_Sans);
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2.875rem;
+    letter-spacing: .3rem;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    margin-left: 120px;
+
+}
+
+section.VR .container .vr__text p {
+    font-family: var(--font-Alata);
+    color: var(--darkGray);
+    text-align: left;
+    margin-left: 120px;
+    font-size: 1.30rem;
+    line-height: 2rem;
+
+}
+
+/* Section Our Creations */
+
+section.our__cerations {
+    margin: 100px 0;
+}
+
+section.our__cerations .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+section.our__cerations .container .creations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    margin-bottom: 100px;
+}
+
+section.our__cerations .container .creations h3 {
+    font-family: var(--font-Josefin_Sans);
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    
+}
+
+section.our__cerations .container .creations .btn {
+    width: 12.5rem;
+    height: 3.75rem;
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 300ms;
+    font-family: var(--font-Josefin_Sans);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+section.our__cerations .container .creations .btn:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+section.our__cerations .container main {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 256px 256px 256px 256px; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    gap: 40px 0px; */
+}
+
+section.our__cerations .container main .card {
+    position: relative;
+    width: 256px;
+    height: 450px;
+    transition: 300ms;
+    color: var(--white);
+    margin-left: 32px;
+    margin-bottom: 32px;
+}
+
+section.our__cerations .container main .card:hover {
+    color: var(--black);
+    content: '';
+    background: rgba(225, 225, 225, .6);
+    color: var(--black);
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* section.our__cerations .container main .card::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(225, 225, 225, .6);
+    color: var(--black);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} */
+
+section.our__cerations .container main .card h4 {
+    font-family: var(--font-Josefin_Sans);
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    position: absolute;
+    bottom: 31px;
+    left: 44px;
+}
+
+section.our__cerations .container main .card_one {
+    background: url(images/desktop/image-deep-earth.jpg);
+    background-size: cover;
+}
+
+section.our__cerations .container main .card_two {
+    background: url(images/desktop/image-night-arcade.jpg);
+}
+
+section.our__cerations .container main .card_three {
+    background: url(images/desktop/image-soccer-team.jpg);
+}
+
+section.our__cerations .container main .card_four {
+    background: url(images/desktop/image-grid.jpg);
+}
+
+section.our__cerations .container main .card_five {
+    background: url(images/desktop/image-from-above.jpg);
+}
+
+section.our__cerations .container main .card_six {
+    background: url(images/desktop/image-pocket-borealis.jpg);
+}
+
+section.our__cerations .container main .card_seven {
+    background: url(images/desktop/image-curiosity.jpg);
+}
+
+section.our__cerations .container main .card_eight {
+    background: url(images/desktop/image-fisheye.jpg);
+}
+
+/* Footer */
+
+footer {
+    height: 200px;
+    background: var(--black);
+}
+
+footer .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+footer .container .logo__social,
+footer .container .nav__footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+
+footer .container .logo__social {
+    color: var(--white);
+}
+
+footer .container .logo__social .social__footer a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    margin-left: 20px;
+}
+
+footer .container .logo__social .social__footer a:hover:after {
+    content: '';
+    width: 50%;
+    margin: 0 auto;
+    height: 3px;
+    background: var(--white);
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+footer .container .nav__footer {
+    color: var(--white);
+}
+
+footer .container .nav__footer .createed__by {
+    font-family: var(--font-Alata);
+    color: var(--darkGray);
+}
+
+footer .container .nav__footer .nav__footer__list {
+    
+}
+
+footer .container .nav__footer .nav__footer__list a {
+    position: relative;
+    text-decoration: none;
+    color: var(--darkGray);
+    font-family: var(--font-Alata);
+}
+
+footer .container .nav__footer .nav__footer__list a:not(:last-child) {
+    margin-right: 20px;
+}
+
+footer .container .nav__footer .nav__footer__list a:hover:after {
+    content: '';
+    width: 50%;
+    margin: 0 auto;
+    height: 3px;
+    background: var(--white);
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+} 

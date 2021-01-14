@@ -1,0 +1,51 @@
+@media (max-width: 1465px) {
+    section.VR .container .vr__text h2 {
+        margin-left: 25px !important;
+    }
+
+    section.VR .container .vr__text p {
+        margin-left: 25px !important;
+    }
+}
+
+
+/* device tablet responsive */
+@media (min-width: 1000px){
+    /* header .container nav .toggle{
+        display: none;
+    } */
+}
+
+@media (max-width: 1000px) {
+    header .container nav .main_nav{
+        display: none;
+    }
+
+    section.VR .container {
+        display: block !important;
+    }
+    
+    header .container nav .toggle {
+        display: block !important;
+    }
+
+    section.VR .container .vr__img {
+        width: 100% !important;
+    }
+
+    section.VR .container .vr__text {
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        bottom: 0 !important;
+        right: 0 !important;
+    }
+}
+
+@media (max-width: 793px) {
+    footer .container .logo__social,
+    footer .container .nav__footer {
+        display: block;
+        text-align: center;
+    }
+}
